@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Property management</string>
+    <string name="group">group</string>
+    <string name="Type">ประเภททรัพย์สิน</string>
+    <string-array name="Typedata">
+        <item>-เลือก-</item>
+        <item>ที่ดิน</item>
+        <item>บ้าน</item>
+        <item>คอนโด</item>
+        <item>อาคารพานิชย์</item>
+    </string-array>
+    <string-array name="Typeland">
+        <item>-เลือก-</item>
+        <item>พื่นที่สีเหลือง - ที่ดินประเภทที่อยู่อาศัยหนาแน่นน้อย</item>
+        <item>พื้นที่สีส้ม – ที่ดินประเภทที่อยู่อาศัยหนาแน่นปานกลาง</item>
+        <item>พื้นที่สีน้ำตาล – ที่ดินประเภทที่อยู่อาศัยหนาแน่นมาก</item>
+        <item>พื้นที่สีแดง – ที่ดินประเภทพาณิชยกรรม</item>
+        <item>พื้นที่สีม่วง – ที่ดินประเภทอุตสาหกรรมและคลังสินค้า</item>
+        <item>พื้นที่สีเม็ดมะปราง – ที่ดินประเภทคลังสินค้า</item>
+        <item>พื้นที่สีเขียว – ที่ดินประเภทชนบทและเกษตรกรรม</item>
+        <item>พื้นที่สีขาวมีกรอบและเส้นทะแยงสีเขียว – ที่ดินประเภทอนุรักษ์ชนบทและเกษตรกรรม</item>
+        <item>พื้นที่สีน้ำตาลอ่อน – ที่ดินประเภทอนุรักษ์เพื่อส่งเสริมเอกลักษณ์ศิลปวัฒนธรรมไทย</item>
+        <item>พื้นที่สีน้ำเงิน – ที่ดินประเภทสถาบันราชการ สาธารณูปโภคและสาธารณูปการ</item>
+    </string-array>
+
+    <string name="roadwide">ความกว้างถนน</string>
+    <string-array name="Typeroad">
+        <item>-เลือก-</item>
+        <item>ซอยแคบ</item>
+        <item>1 เมตร</item>
+        <item>2 เมตร</item>
+        <item>4 เมตร</item>
+        <item>8 เมตร</item>
+        <item>12 เมตร</item>
+    </string-array>
+
+    <string-array name="deedtype">
+        <item>-เลือก-</item>
+        <item>น.ส.4จ.</item>
+        <item>น.ส.3.</item>
+        <item>น.ส.3ก.</item>
+        <item>น.ส.2.</item>
+        <item>น.ส.1.</item>
+    </string-array>
+
+    <string-array name="statustype">
+        <item>-เลือก-</item>
+        <item>ว่าง</item>
+        <item>จำนอง</item>
+        <item>ขายฝาก</item>
+        <item>ฝากขาย</item>
+    </string-array>
+
+    <string-array name="directiontype">
+        <item>-เลือก-</item>
+        <item>เหนือ</item>
+        <item>ตะวันออก</item>
+        <item>ตะวันตก</item>
+        <item>ใต้</item>
+        <item>ตะวันออกเฉียงเหนือ</item>
+        <item>ตะวันตกเฉียงเหนือ</item>
+        <item>ตะวันออกเฉียงใต้</item>
+        <item>ตะวันตกเฉียงใต้</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>มกราคม</item>
+        <item>กุมภาพันธ์</item>
+        <item>มีนาคม</item>
+        <item>เมษายน</item>
+        <item>พฤษภาคม</item>
+        <item>มิถุนายน</item>
+        <item>กรกฎาคม</item>
+        <item>สิงหาคม</item>
+        <item>กันยายน</item>
+        <item>ตุลาคม</item>
+        <item>พฤศจิกายน</item>
+        <item>ธันวาคม</item>
+    </string-array>
+
+    <string-array name="statusContact">
+        <item>-เลือก-</item>
+        <item>เจ้าของ</item>
+        <item>นายหน้า</item>
+    </string-array>
+
+    <string name="ppstatus">สถานะทรัพย์สิน</string>
+    <string-array name="ppstatusArray">
+        <item>-เลือก-</item>
+        <item>ใหม่</item>
+        <item>มือสอง</item>
+    </string-array>
+
+    <string-array name="TypeArrpy">
+        <item>-เลือก-</item>
+        <item>ที่ดิน</item>
+        <item>บ้าน</item>
+        <item>คอนโด</item>
+        <item>อาคารพานิชย์</item>
+    </string-array>
+
+    <string name="priceSearch">ราคา</string>
+    <string-array name="priceArray">
+        <item>-เลือก-</item>
+        <item>ต่ำกว่า500,000</item>
+        <item>1,100,000–5,000,000</item>
+        <item>5,100,000–10,000,000</item>
+        <item>มากกว่า10,000,000</item>
+    </string-array>
+
+
+    <string name="province">จังหวัด</string>
+    <string name="canton">อำเภอ</string>
+    <string name="district">ตำบล</string>
+    <string name="zipcode">รหัสไปรษณีย์</string>
+
+
+</resources>

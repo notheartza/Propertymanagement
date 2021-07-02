@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Increase_Property" android:layout_marginTop="10dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/Scroll_Insert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:text="ข้อมูลทั่วไป"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/deedtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ประเภททรัพย์สิน : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/typedase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/Typedata"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/Type"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/announce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:autoText="true"
+                android:ems="10"
+                android:hint="หัวข้อประกาศ"
+                android:inputType="textMultiLine|textPersonName|textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/deedtext6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ประเภทที่ดิน : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/typeland"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/Typeland"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/codedeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="รหัสโฉนดที่ดิน"
+                android:inputType="textMultiLine|textPersonName|textImeMultiLine"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textView121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#4BAE50"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ราคา"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/sellprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ราคา(ที่คนขายกำหนด)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/costestimate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ราคาประเมิน(กรมที่ดินประเมิน)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/costestimateB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ราคาประเมิน(ธนาคารประเมิน)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/marketprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ราคาตลาด"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/pricePM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ราคาต่อตารางวา"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:id="@+id/descriptionPropertys"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#4BAE50"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="รายละเอียด"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/distanceUse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="พื่นที่ใช้สอย"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/bathroomN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="จำนวนห้องน้ำ"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/bedroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="จำนวนหห้องนอน"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/parkcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="จำนวนที่จอดรถ"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/levelHabitation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="จำนวนชั้น"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/commonFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="ค่าใช้จ่ายส่วนกลาง"
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/landdistance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#4BAE50"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="รายละเอียดที่ดิน"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/distanceG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="ที่ดิน(ไร่)"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/distanceWA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="ที่ดิน(งาน)"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/distanceR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="-30dp"
+                    android:ems="10"
+                    android:hint="ที่ดิน(ตร.ว.)"
+                    android:inputType="number"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="false" />
+
+                <EditText
+                    android:id="@+id/distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="พื้นที่ (กว้าง*ลึก) เมตร"
+                    android:inputType="text" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="สถานะ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/statusNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="มี" />
+
+                <RadioButton
+                    android:id="@+id/statusOld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ไม่มี" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/codeProperty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="รหัสทรัพย์สิน(จากธนาคาร หรือ กรมที่ดิน)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/numberDeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="เลขโฉนด"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/deedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="โฉนด : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/Deed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/deedtype"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/assStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="สถานะทรัพย์สิน : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/assStatus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/statustype"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/tenureAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="อายุการถือของที่ดิน"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="อายุ"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="ปีที่ก่อสร้าง : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/buildFD"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:entries="@array/statustype"
+                    android:foreground="@drawable/spinnerback"
+                    android:spinnerMode="dropdown" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/buildFM"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:entries="@array/month"
+                    android:foreground="@drawable/spinnerback"
+                    android:spinnerMode="dropdown" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/buildFY"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:entries="@array/statustype"
+                    android:foreground="@drawable/spinnerback"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/directionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ทิศ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/direction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/directiontype"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:id="@+id/facilities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView122"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#4BAE50"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="สิ่งอำนวยความสะดวก"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/airconditioner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เครื่องปรับอากาศ" />
+
+
+                <CheckBox
+                    android:id="@+id/afan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="พัดลม" />
+
+                <CheckBox
+                    android:id="@+id/AirPurifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เครืองฟอกอากาศ" />
+
+                <CheckBox
+                    android:id="@+id/Waterheater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เครืองทํานําอุ่น" />
+
+                <CheckBox
+                    android:id="@+id/WIFI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="มีอินเตอร์เน็ตไร้สาย (Wi-Fi)" />
+
+                <CheckBox
+                    android:id="@+id/TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เคเบิลทีวี" />
+
+                <CheckBox
+                    android:id="@+id/refrigerator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ตู้เย็น" />
+
+                <CheckBox
+                    android:id="@+id/microwave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ไมโครเวฟ" />
+
+                <CheckBox
+                    android:id="@+id/gasstove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เตาแก๊ส" />
+
+                <CheckBox
+                    android:id="@+id/wardrobe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ตู้เสือผ้า" />
+
+                <CheckBox
+                    android:id="@+id/TCset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ชุดโต๊ะเก้าอี" />
+
+                <CheckBox
+                    android:id="@+id/sofa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="โซฟา" />
+
+                <CheckBox
+                    android:id="@+id/bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เตียง" />
+
+                <CheckBox
+                    android:id="@+id/shelves"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ชันวาง" />
+
+                <CheckBox
+                    android:id="@+id/CCTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="กล้องวงจรปิด CCTV" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facilitiesCondo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#4BAE50"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="สิ่งอำนวยความสะดวกส่วนกลาง"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/Securityguard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="เจ้าหน้าทีรักษาความปลอดภัย" />
+
+                <CheckBox
+                    android:id="@+id/pool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="สระว่ายนํา" />
+
+                <CheckBox
+                    android:id="@+id/Fitness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ฟิตเนส" />
+
+                <CheckBox
+                    android:id="@+id/Publicarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="พืนทีส่วนกลาง" />
+
+                <CheckBox
+                    android:id="@+id/ShuttleBus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="รถรับส่ง" />
+
+                <CheckBox
+                    android:id="@+id/WVmachine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ตู้นําหยอดเหรียญ" />
+
+                <CheckBox
+                    android:id="@+id/Elevator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ลิฟต์" />
+
+                <CheckBox
+                    android:id="@+id/Lobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ล๊อบบี" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facilitiesproperty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#4BAE50"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="สิงอํานวยความสะดวกบริเวณอาคาร"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/Kitchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ห้องครัว" />
+
+                <CheckBox
+                    android:id="@+id/LivingR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ห้องนังเล่น" />
+
+                <CheckBox
+                    android:id="@+id/EventR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ห้องจัดงาน" />
+
+                <CheckBox
+                    android:id="@+id/MeetingR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ห้องประชุม" />
+
+                <CheckBox
+                    android:id="@+id/Balcony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ระเบียง" />
+
+                <CheckBox
+                    android:id="@+id/ATM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ตู้เอทีเอ็ม" />
+
+                <CheckBox
+                    android:id="@+id/BeautySalon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ร้านเสริมสวย" />
+
+                <CheckBox
+                    android:id="@+id/Hairsalon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ร้านทําผม" />
+
+                <CheckBox
+                    android:id="@+id/Laundry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ร้านซักรีด/ซักแห้ง" />
+
+                <CheckBox
+                    android:id="@+id/Store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ร้านค้า" />
+
+                <CheckBox
+                    android:id="@+id/Supermarket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ซุปเปอร์มาร์เก็ต" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ทำเล"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/blind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="ที่ตาบอด" />
+
+            <CheckBox
+                android:id="@+id/neareducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="ใกล้สถานศึกษา" />
+
+            <CheckBox
+                android:id="@+id/cenmarket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="ใกล้ศูนย์การค้า" />
+
+            <CheckBox
+                android:id="@+id/market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="ใกล้ตลาด" />
+
+            <CheckBox
+                android:id="@+id/river"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="ติดแม่น้ำ" />
+
+            <CheckBox
+                android:id="@+id/mainroad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="ติดถนน" />
+
+            <CheckBox
+                android:id="@+id/insoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="อยู่ในซอย" />
+
+            <CheckBox
+                android:id="@+id/letcN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="อื่นๆ" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="สถานะถนน"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/roadtype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/mud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="โคลน" />
+
+                <RadioButton
+                    android:id="@+id/asphalt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="ยางมะตอย" />
+
+                <RadioButton
+                    android:id="@+id/concrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="คอนกรีต" />
+
+                <RadioButton
+                    android:id="@+id/letcR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="อื่นๆ" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="ความกว้างถนน"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/roadwide"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/Typeroad"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/roadwide"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
+                android:text="ระดับพื้นดิน"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/Groundlevel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/GroundlevelH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="สูงกว่าถนน" />
+
+                <RadioButton
+                    android:id="@+id/GroundlevelL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ต่ำกว่าถนน" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/Groundvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="ระดับพื้นดินจากถนน(เมตร)"
+                android:inputType="textMultiLine|textPersonName|textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="รายละเอียดเพิ่มเติม"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/moredetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="กรอกรายละเอียดอสังหา"
+                android:inputType="textLongMessage|text"
+                android:nestedScrollingEnabled="true"
+                android:paddingBottom="20dp"
+                android:scrollbars="vertical"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="รูปภาพ"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="center" android:visibility="visible"
+                android:padding="20dp" android:layout_weight="2">
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/image_Selected" android:scaleType="centerCrop"
+                    android:paddingTop="20dp" android:paddingBottom="20dp" android:visibility="gone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Select_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="เลือกรูปภาพ" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ที่อยู่อสังหา"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/observationpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="จุดสังเกต"
+                android:inputType="textMultiLine|textPersonName|textImeMultiLine" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ที่อยู่(ภาษาไทย)"
+                android:inputType="textMultiLine|textPersonName|textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/deedtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="จังหวัด : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/province"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/province"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/deedtext5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="อำเภอ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/amphur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/canton"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/deedtext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ตำบล : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/district"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/deedtext4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="รหัสไปรษณี : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:foreground="@drawable/spinnerback"
+                android:prompt="@string/zipcode"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/deedtext7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="แผนที่ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/fragment_map_container"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="20dp"
+                android:apiKey="AIzaSyA-MMPNnbA8ap0h191TmnXkz0KFnqgcAxU" />
+
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="ข้อมูลผู้ติดต่อ"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/conText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ผู้ติดต่อคนที่ 1 : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/contact1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/newContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="สร้างรายชื่อผู้ติดต่อ" />
+
+            <TextView
+                android:id="@+id/conStatusText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="สถานะผู้ติดต่อ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/conStatus1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/statusContact"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/contText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ผู้ติดต่อคนที่ 2 : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/contact2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/conStatusText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="สถานะผู้ติดต่อ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/conStatus2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/statusContact"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/conText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ผู้ติดต่อคนที่ 3 : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/contact3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/conStatusText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="สถานะผู้ติดต่อ : "
+                android:textColor="#1B1B1B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/conStatus3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/statusContact"
+                android:foreground="@drawable/spinnerback"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Cannel_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ยกเลิก" />
+
+                <Button
+                    android:id="@+id/Comfirm_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ยืนยัน" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

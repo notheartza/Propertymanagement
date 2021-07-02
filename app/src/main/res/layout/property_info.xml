@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Property_Info">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/backhome" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/info_AnnounceHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ใช้หัวข้อประกาศ"
+                    android:textSize="24sp" />
+
+                <View
+                    android:id="@+id/divider12"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E8EDF4" />
+
+                <TextView
+                    android:id="@+id/info_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:text="ที่อยู่: " />
+
+                <TextView
+                    android:id="@+id/info_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_money"
+                    android:text="ราคา : " />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/imageAnnounce"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ข้อมูลทั่วไป" />
+
+                <TextView
+                    android:id="@+id/info_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ประเภทอสังหาฯ:" />
+
+                <TextView
+                    android:id="@+id/info_Announce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="หัวข้อประกาศ:" />
+
+                <TextView
+                    android:id="@+id/info_Deedcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="รหัสโฉนดที่ดิน:" />
+
+                <TextView
+                    android:id="@+id/info_SellPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" ราคาขาย:" />
+
+                <TextView
+                    android:id="@+id/info_CostEstimate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" ราคาประเมิน(กรมที่ดิน):" />
+
+                <TextView
+                    android:id="@+id/info_CostEstimateB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" ราคาประเมิน(ธนาคาร):" />
+
+                <TextView
+                    android:id="@+id/info_MarketPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" ราคาตลาด:" />
+
+
+                <LinearLayout
+                    android:id="@+id/houseDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#496174"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="รายละเอียดอสังหา" />
+
+                    <TextView
+                        android:id="@+id/info_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="จำนวนชั้น:" />
+
+                    <TextView
+                        android:id="@+id/info_bathroomN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ห้องน้ำ:" />
+
+                    <TextView
+                        android:id="@+id/info_bedroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ห้องนอน:" />
+
+                    <TextView
+                        android:id="@+id/info_ParkCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ที่จอดรถ:" />
+
+                    <TextView
+                        android:id="@+id/info_distanceUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="พื้นที่ใช้สอย(ตร.ว.):" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/testview18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="รายละเอียดที่ดิน" />
+
+                <TextView
+                    android:id="@+id/info_distanceG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ที่ดิน(ไร่):" />
+
+                <TextView
+                    android:id="@+id/info_distanceWA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ที่ดิน(งาน):" />
+
+                <TextView
+                    android:id="@+id/info_distanceR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ที่ดิน(ตร.ว.):" />
+
+                <View
+                    android:id="@+id/divider9"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#32000000" />
+
+                <TextView
+                    android:id="@+id/info_HomeCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="สภาพบ้าน:" />
+
+                <TextView
+                    android:id="@+id/info_assStatusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="สถานะทรัพย์สิน:" />
+
+                <TextView
+                    android:id="@+id/info_tenureAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="อายุการถือครองที่ดิน:" />
+
+                <TextView
+                    android:id="@+id/info_Age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="อายุบ้าน:" />
+
+                <TextView
+                    android:id="@+id/info_dateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ปีที่ก่อสร้าง:" />
+
+                <TextView
+                    android:id="@+id/info_directionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ทิศของประตูบ้าน:" />
+
+
+                <LinearLayout
+                    android:id="@+id/facilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#496174"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="สิ่งอำนวยความสะดวก" />
+
+
+                    <LinearLayout
+                        android:id="@+id/facilities_InRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="สิ่งอำนวยความสะดวกภายในห้อง"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_AirConditioner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เครื่องปรับอากาศ :" />
+
+                        <TextView
+                            android:id="@+id/info_aFan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="พัดลม :" />
+
+                        <TextView
+                            android:id="@+id/info_AirPurifier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เครื่องฟอกอากาศ :" />
+
+                        <TextView
+                            android:id="@+id/info_WaterHeater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เครื่องทำน้ำอุ่น :" />
+
+                        <TextView
+                            android:id="@+id/info_WIFI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="มีอินเตอร์เน็ตไร้สาย (Wi-Fi) :" />
+
+                        <TextView
+                            android:id="@+id/info_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เคเบิลทีวี :" />
+
+                        <TextView
+                            android:id="@+id/info_refrigerator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ตู้เย็น :" />
+
+                        <TextView
+                            android:id="@+id/info_microwave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ไมโครเวฟ :" />
+
+                        <TextView
+                            android:id="@+id/info_GasStove"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เตาแก๊ส :" />
+
+                        <TextView
+                            android:id="@+id/info_wardrobe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ตู้เสื้อผ้า :" />
+
+                        <TextView
+                            android:id="@+id/info_TCSet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ชุดโต๊ะเก้าอี้ :" />
+
+                        <TextView
+                            android:id="@+id/info_sofa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="โซฟา :" />
+
+                        <TextView
+                            android:id="@+id/info_shelves"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ชั้นวาง :" />
+
+                        <TextView
+                            android:id="@+id/info_CCTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="กล้องวงจรปิด CCTV :" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/facilities_Public"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="สิ่งอำนวยความสะดวกส่วนกลาง"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_SecurityGuard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เจ้าหน้าที่รักษาความปลอดภัย :" />
+
+                        <TextView
+                            android:id="@+id/info_Pool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="สระว่ายน้ำ :" />
+
+                        <TextView
+                            android:id="@+id/info_Fitness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ฟิตเนส :" />
+
+                        <TextView
+                            android:id="@+id/info_PublicArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="พื้นที่ส่วนกลาง :" />
+
+                        <TextView
+                            android:id="@+id/info_ShuttleBus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="รถรับส่ง :" />
+
+                        <TextView
+                            android:id="@+id/info_WVMachine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ตู้น้ำหยอดเหรียญ :" />
+
+                        <TextView
+                            android:id="@+id/info_CWMachine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="เครื่องซักผ้าหยอดเหรียญ :" />
+
+                        <TextView
+                            android:id="@+id/info_Elevator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ลิฟต์ :" />
+
+                        <TextView
+                            android:id="@+id/info_Lobby"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ล๊อบบี้ :" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/facilities_Common"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ทั่วไป"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_Kitchen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ห้องครัว :" />
+
+                        <TextView
+                            android:id="@+id/info_LivingR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ห้องนั่งเล่น :" />
+
+                        <TextView
+                            android:id="@+id/info_EventR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ห้องจัดงาน :" />
+
+                        <TextView
+                            android:id="@+id/info_MeetingR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ห้องประชุม :" />
+
+                        <TextView
+                            android:id="@+id/info_Balcony"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ระเบียง :" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/facilities_Building"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="สิ่งอำนวยความสะดวกบริเวณอาคาร"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_ATM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ตู้เอทีเอ็ม / ธนาคาร :" />
+
+                        <TextView
+                            android:id="@+id/info_BeautySalon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ร้านเสริมสวย :" />
+
+                        <TextView
+                            android:id="@+id/info_CStore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ร้านสะดวกซื้อ :" />
+
+                        <TextView
+                            android:id="@+id/info_HairSalon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ร้านทำผม :" />
+
+                        <TextView
+                            android:id="@+id/info_Laundry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ร้านซักรีด/ซักแห้ง :" />
+
+                        <TextView
+                            android:id="@+id/info_Store"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ร้านค้า :" />
+
+                        <TextView
+                            android:id="@+id/info_Supermarket"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="ซุปเปอร์มาร์เก็ต :" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ทำเล" />
+
+                <TextView
+                    android:id="@+id/info_blind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ที่ตาบอด :" />
+
+                <TextView
+                    android:id="@+id/info_neareducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ใกล้สถานศึกษา :" />
+
+                <TextView
+                    android:id="@+id/info_cenmarket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ใกล้ศูนย์การค้า :" />
+
+                <TextView
+                    android:id="@+id/info_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ใกล้ตลาด :" />
+
+                <TextView
+                    android:id="@+id/info_river"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ติดแม่น้ำ :" />
+
+                <TextView
+                    android:id="@+id/info_mainroad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ติดถนน :" />
+
+                <TextView
+                    android:id="@+id/info_insoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="อยู่ในซอย :" />
+
+                <TextView
+                    android:id="@+id/info_letcN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="อื่นๆ :" />
+
+                <TextView
+                    android:id="@+id/testview15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="สถานะถนน"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_TypeR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ประเภท :" />
+
+                <TextView
+                    android:id="@+id/info_wideRoad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ความกว้างถนน :" />
+
+                <TextView
+                    android:id="@+id/info_GroundLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ระดับพื้นดิน : " />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="รายละเอียดเพิ่มเติม" />
+
+                    <TextView
+                        android:id="@+id/moredetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:inputType="textMultiLine|textImeMultiLine" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ที่อยู่อสังหาทรัพย์" />
+
+                <TextView
+                    android:id="@+id/info_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="แผนที่" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/fragment_map_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:apiKey="AIzaSyA-MMPNnbA8ap0h191TmnXkz0KFnqgcAxU" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="รายละเอียดที่อยู่" />
+
+                <TextView
+                    android:id="@+id/info_observationPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="จุดสังเกตุ:" />
+
+                <TextView
+                    android:id="@+id/info_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ที่อยู่:" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#496174"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="ข้อมูลผู้ติดต่อ" />
+
+                <TextView
+                    android:id="@+id/info_Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ผู้ติดต่อ:" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="กลับ" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

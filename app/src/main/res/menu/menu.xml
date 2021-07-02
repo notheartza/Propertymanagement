@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <item
+        android:id="@+id/Home_menu"
+        android:title="หน้าแรก"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/profile_menu"
+        android:title="โปรไฟล์ของฉัน"
+        app:showAsAction="never" android:icon="@drawable/ic_person"/>
+    <item
+        android:id="@+id/myAnnounce_menu"
+        android:title="อสังหาของฉัน"
+        app:showAsAction="never" android:icon="@drawable/ic_house"/>
+    <item
+        android:id="@+id/post_menu"
+        android:title="เพิ่มอสังหาริมทรัพย์"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_plus"/>
+    <item
+        android:id="@+id/search_menu"
+        android:title="ค้นหาประกาศ"
+        app:showAsAction="never" android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/recommend_menu"
+        android:title="แนะนำ"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout_menu"
+        android:title="ออกจากระบบ"
+        app:showAsAction="never" android:icon="@drawable/ic_exit"/>
+
+</menu>
