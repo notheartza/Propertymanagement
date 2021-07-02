@@ -754,7 +754,7 @@
                     android:id="@+id/fragment_map_info"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:apiKey="AIzaSyA-MMPNnbA8ap0h191TmnXkz0KFnqgcAxU" />
+                    android:apiKey="GOOGLE API" />
 
                 <TextView
                     android:id="@+id/textView24"
